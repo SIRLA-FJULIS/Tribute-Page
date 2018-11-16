@@ -1,0 +1,14 @@
+#main{
+	background-color: #eeeeee;
+	border-radius: 5px;/*Ï圓角，數值越大，圓角越大*/
+	margin:30px auto;/**/
+}
+#img-div{
+	width:100%;
+	margin-top:20px;
+	margin:-5px;
+ 	background-color:white;
+ 	border:5px solid #eeeeee;
+ 	
+	
+}
