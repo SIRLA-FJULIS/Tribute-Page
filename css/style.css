@@ -8,7 +8,23 @@
 	margin-top:20px;
 	margin:-5px;
  	background-color:white;
- 	border:5px solid #eeeeee;
- 	
-	
+ 	border:5px solid #eeeeee;	
+}
+#img-caption{
+  margin:15px;
+}
+#headline{
+  margin-top:50px;
+  text-align:left; /*置左內部元素*/
+} 
+ul{
+  max-width:550px;
+  margin:0 auto; /*置中*/
+  text-align:left; /*置左內部元素*/
+}
+li{
+  margin: 10px;
+}
+blockquote{
+  font-style: italic; /*字型設定*/
 }
