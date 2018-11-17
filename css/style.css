@@ -1,7 +1,7 @@
 #main{
-	background-color: #eeeeee;
-	border-radius: 5px;/*Ï圓角，數值越大，圓角越大*/
-	margin:30px auto;/**/
+  background-color: #eeeeee;
+  border-radius: 5px;/*Ï圓角，數值越大，圓角越大*/
+  margin:30px auto;/**/
 }
 #img{
   max-width: 100%; 
@@ -9,12 +9,12 @@
   margin: auto;    /*前三行會使圖片的寬度、高度以及邊界皆會因應不同螢幕寬度的瀏覽器做大小的調整*/
   display: block;  /*規定elements要以區塊方式呈現(占據一整行)*/
 }
-#img-div{
-	width:100%;
-	margin-top:20px;
-	margin:-5px;
- 	background-color:white;
- 	border:5px solid #eeeeee;	
+#img-div > img {
+  width:100%;
+  margin-top:20px;
+  margin:-5px;
+  background-color:white;
+  border:5px solid #eeeeee; 
   text-align: center; /*將img-div中的內容水平對齊*/
 }
 #img-caption{
