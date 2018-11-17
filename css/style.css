@@ -3,7 +3,7 @@
   border-radius: 5px;/*Ï圓角，數值越大，圓角越大*/
   margin:30px auto;/**/
 }
-#img{
+img{
   max-width: 100%; 
   height: auto;     
   margin: auto;    /*前三行會使圖片的寬度、高度以及邊界皆會因應不同螢幕寬度的瀏覽器做大小的調整*/
