@@ -8,6 +8,7 @@
   height: auto;     
   margin: auto;    /*前三行會使圖片的寬度、高度以及邊界皆會因應不同螢幕寬度的瀏覽器做大小的調整*/
   display: block;  /*規定elements要以區塊方式呈現(占據一整行)*/
+  box-shadow: 0 3px 12px rgba(41,36,33,0.6); /*IMAGE陰影[x軸,y軸,模糊半徑,rgb與alpha值(透明度)];
 }
 #img-div > img {
   width:100%;
@@ -23,15 +24,29 @@
 #headline{
   margin-top:50px;
   text-align:left; /*置左內部元素*/
+  font-weight: bold;
 } 
 ul{
   max-width:550px;
   margin:0 auto; /*置中*/
   text-align:left; /*置左內部元素*/
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 120%;
 }
 li{
   margin: 10px;
 }
 blockquote{
   font-style: italic; /*字型設定*/
+}
+#title{
+  font-family: 'Merriweather',serif;
+}
+p{
+  font-family: 'Ranga',cursive;
+  font-size: 120% ;
+}
+#img-caption{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 98% ;
 }
