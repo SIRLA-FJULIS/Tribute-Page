@@ -8,14 +8,14 @@
   height: auto;     
   margin: auto;    /*前三行會使圖片的寬度、高度以及邊界皆會因應不同螢幕寬度的瀏覽器做大小的調整*/
   display: block;  /*規定elements要以區塊方式呈現(占據一整行)*/
-  box-shadow: 0 3px 12px rgba(41,36,33,0.6); /*IMAGE陰影[x軸,y軸,模糊半徑,rgb與alpha值(透明度)];
+  /*box-shadow: 0 3px 12px rgba(41,36,33,0.6); /*IMAGE陰影[x軸,y軸,模糊半徑,rgb與alpha值(透明度)];*/
 }
 #img-div > img {
   width:100%;
   margin-top:20px;
   margin:-5px;
-  background-color:white;
-  border:5px solid #eeeeee; 
+
+  border:3px solid #eeeeee; 
   text-align: center; /*將img-div中的內容水平對齊*/
 }
 #img-caption{
@@ -41,11 +41,15 @@ blockquote{
 }
 #title{
   font-family: 'Merriweather',serif;
+  padding-top:10px;
+ 
 }
+
 p{
   font-family: 'Ranga',cursive;
   font-size: 140% ;
 }
 #img-caption{
   font-family: 'Josefin Sans', sans-serif;
+  margin-top:30px;
 }
