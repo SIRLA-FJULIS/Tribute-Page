@@ -1,14 +1,40 @@
+/*警報訊息框架*/
+.alter {
+  padding: 20px;
+  background-color: #f44336; /*紅色*/
+  color: white;
+  margin-bottom: 15px;
+}
+/*關閉按鈕設計*/
+.closebtn{
+  margin-left: 15px;
+  color: white;
+  font-weight: bold; /*字體粗*/
+  float: right;
+  font-size: 22px; /*字體大小*/
+  line-height: 20px; /*行距*/
+  cursor: pointer; /*改變滑鼠游標形狀*/
+  transition: 0.3s; /*轉場*/
+}
+/*滑鼠停在關閉按鈕時顏色改變*/
+.closebtn:hover {
+    color: black;
+}
 #main{
   background-color: #eeeeee;
-  border-radius: 5px;/*Ï圓角，數值越大，圓角越大*/
-  margin:30px auto;/**/
+  border-radius: 5px; /*Ï圓角，數值越大，圓角越大*/
+  margin:30px auto; /**/
 }
 #image{
   max-width: 100%; 
   height: auto;     
   margin: auto;    /*前三行會使圖片的寬度、高度以及邊界皆會因應不同螢幕寬度的瀏覽器做大小的調整*/
   display: block;  /*規定elements要以區塊方式呈現(占據一整行)*/
+<<<<<<< HEAD
   /*box-shadow: 0 3px 12px rgba(41,36,33,0.6); /*IMAGE陰影[x軸,y軸,模糊半徑,rgb與alpha值(透明度)];*/
+=======
+  box-shadow: 0 3px 12px rgba(41,36,33,0.6); /*IMAGE陰影[x軸,y軸,模糊半徑,rgb與alpha值(透明度)]*/
+>>>>>>> 51570482d91f99797991ec7b0f860a499c53809f
 }
 #img-div > img {
   width:100%;
@@ -51,5 +77,41 @@ p{
 }
 #img-caption{
   font-family: 'Josefin Sans', sans-serif;
+<<<<<<< HEAD
   margin-top:30px;
 }
+=======
+}
+.toTop-arrow {
+  width: 2.5rem; /*按鈕寬度*/
+  height: 2.5rem; /*按鈕高度*/
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%; /*按鈕外型設計*/
+  opacity: 0.6; /*設定透明度*/
+  background: #000;
+  cursor: pointer;
+  position:fixed;
+  right: 1rem; /*浮動位置 - 與右方距離*/
+  bottom: 1rem; /*浮動位置 - 與底部距離*/
+  display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 18px; /*箭頭粗細設計*/
+  height: 5px; /*箭頭粗細設計*/
+  border-radius: 3px;
+  background: #f90; /*箭頭顏色設計*/
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.5rem; /*箭頭位置設計*/
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.5rem; /*箭頭位置設計*/
+}
+.toTop-arrow:focus {outline: none;}
+>>>>>>> 51570482d91f99797991ec7b0f860a499c53809f

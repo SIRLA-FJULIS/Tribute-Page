@@ -17,9 +17,46 @@
   <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">          <!--引進Google font-->
   <script src="js/bootstrap.min.js"></script>
+  <script>
+  $(function(){
+    $(".close").click(function(){
+        $("#myAlert").alert('close');
+        $("#myAlert2").alert('close');
+    });
+  });
+  </script>
+  <!--先導入jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--在網頁增加一個按鈕-->
+  <button type="button" id="BackTop" class="toTop-arrow"></button>
+  <script>
+  $(function(){
+    $('#BackTop').click(function(){ 
+        $('html,body').animate({scrollTop:0}, 333); 
+        /*點擊此按鈕時,自動捲動至最上方,設0.333秒完成捲動動作*/
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300 ){
+            $('#BackTop').fadeIn(222); 
+            /*判斷網頁可視範圍的最上方距離網頁頂端是否超過300px*/
+            /*超過300px,以0.222秒的特效顯示按鈕*/
+        } else {
+            $('#BackTop').stop().fadeOut(222);
+            /*未超過300px,先停止正在進行的特效,接著以0.222秒的特效隱藏按鈕*/
+        }
+    }).scroll();
+  });
+  </script>
 </head>
-
 <body>
+  <div class="alert alert-success">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      Success! Indicates a successful or positive action.
+  </div>
+  <!--
+    加入alert
+    &times做出關閉按鈕
+  -->
   <div id="main" class="container">
     <h1 id="title" class="text-center">Dr. Norman Borlaug</h1>
     <p class="text-center">The man who saved a billion lives</p>
@@ -75,7 +112,11 @@
       About Norman Borlaug</a></p>
   <!--
     超連結語法<a>無法使用class="text-center"的方式置中，因此包了一層<p>在外面使其置中
+<<<<<<< HEAD
     	class=" text-muted"超連結字體顏色改變為灰黑，其他類別：https://bootstrap.hexschool.com/docs/4.1/utilities/colors/
   -->
+=======
+  --> 
+>>>>>>> 51570482d91f99797991ec7b0f860a499c53809f
 </body>
 </html>
