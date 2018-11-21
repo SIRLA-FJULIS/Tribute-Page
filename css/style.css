@@ -1,7 +1,7 @@
 /*警報訊息框架*/
-.alter {
+.alert {
   padding: 20px;
-  background-color: #f44336; /*紅色*/
+  background-color: #008000; /*綠色*/
   color: white;
   margin-bottom: 15px;
 }
